@@ -3,3 +3,6 @@ controlplane ~ ➜  kubectl get pods
 kubectl get configmaps -n default
 kubectl describe configmap db-config
 kubectl create configmap webapp-color-map --from-literal=APP_COLOR=darkblue --from-literal=APP_OTHER=disregard
+ kubectl get secrets
+controlplane ~ ➜  kubectl describe secrets dashboard-token
+
