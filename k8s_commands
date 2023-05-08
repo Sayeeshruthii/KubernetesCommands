@@ -5,4 +5,12 @@ kubectl describe configmap db-config
 kubectl create configmap webapp-color-map --from-literal=APP_COLOR=darkblue --from-literal=APP_OTHER=disregard
  kubectl get secrets
 controlplane ~ ➜  kubectl describe secrets dashboard-token
-
+kubectl get serviceaccounts
+kubectl describe serviceaccount default
+ k describe deployments/web-dashboard 
+ kubectl create serviceaccount dashboard-sa
+ k get pod rabbit -o yaml
+ watch kubectl get pods
+ kubectl taint nodes node01 spray=mortein:NoSchedule
+kubectl taint nodes controlplane node-role.kubernetes.io/control-plane:NoSchedule-
+kubectl get pods -o wide  
