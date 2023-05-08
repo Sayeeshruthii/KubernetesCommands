@@ -13,4 +13,9 @@ kubectl describe serviceaccount default
  watch kubectl get pods
  kubectl taint nodes node01 spray=mortein:NoSchedule
 kubectl taint nodes controlplane node-role.kubernetes.io/control-plane:NoSchedule-
-kubectl get pods -o wide  
+kubectl get pods -o wide
+kubectl logs -f pod_name container_name(If multiple pods are present}
+kubectl top pod
+kubectl top node
+k get po
+
