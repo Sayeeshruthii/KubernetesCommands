@@ -18,4 +18,6 @@ kubectl logs -f pod_name container_name(If multiple pods are present}
 kubectl top pod
 kubectl top node
 k get po
+kubectl get all --selector env=prod
+controlplane ~ ➜  kubectl get pods -l bu=finance
 
