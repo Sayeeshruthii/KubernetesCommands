@@ -20,4 +20,7 @@ kubectl top node
 k get po
 kubectl get all --selector env=prod
 controlplane ~ ➜  kubectl get pods -l bu=finance
+master $ kubectl rollout history deployment nginx --revision=1
+kubectl set image deployment nginx nginx=nginx:1.17 --record
+kubectl rollout undo deployment/deployment_name
 
